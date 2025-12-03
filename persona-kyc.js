@@ -15,8 +15,6 @@ export function run(inquiry_id) {
   return JSON.stringify({
     status: body.data.attributes.status,
     name_first: body.data.attributes['name-first'],
-    name_middle: body.data.attributes['name-middle'],
     name_last: body.data.attributes['name-last'],
-    country_code: body.data.attributes.fields["address-country-code"]["value"]
   });
 }
