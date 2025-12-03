@@ -1,0 +1,10 @@
+{
+  "wasmCid": "bafybeidnol4z2mwatmsqhotbiypp2ugmf4vfsndzw4dvpbctk5ahnjnayy",
+  "wasmArgs": "bafkreigkhuldxkyfkoaye4rgcqcwr45667vkygd45plwq6hawy7j4rbdky",
+  "policyCid": "bafkreihrgz7anumgorndidy4wmlh3xlmfy6kvhqtjkmaawqzcsyu7d4wqe",
+  "schemaCid": "bafkreigkg5yvtew6epzcib2one2sqxgnwjuea5desczfbug4dzs6nxcgde",
+  "attester": "0x4883282094755C01cd0d15dFE74753c9E189d194",
+  "entrypoint": "chainalysis_sanctions_agent.allow",
+  "policyMetadataCid": "bafkreiejqxrfefr5rzxfthwf5ztkejqylg2ou5nhn3hph72e4fwdzwxw4e",
+  "policyDataMetadataCid": "bafkreih7tut5o7oishr76sthfziu6k5h5isq7k4fx3ksiy24fiko4wxo4u"
+}
