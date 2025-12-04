@@ -13,3 +13,5 @@ newton-cli policy simulate \
   --entrypoint "max_gas_price.allow" \
   --wasm-args policy-files/wasm_args.json \
   --policy-params-data policy-files/policy_params_data.json
+
+{"inquiry_id":"inq_xRZrQFKg7rqZ5UZGLhnvb2ympshE", "address":"0x1999ef52700c34de7ec2b68a28aafb37db0c5ade"}

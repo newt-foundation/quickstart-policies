@@ -22,6 +22,7 @@ export function run(wasm_args) {
     const ofacBody = JSON.parse(new TextDecoder().decode(new Uint8Array(ofacResponse.body)));
     
     return JSON.stringify({
+      address,
       kyc_status: kycBody.data.attributes.status,
       ofac_status: ofacResponse.status,
       ofac_sanctioned: ofacBody.identifications.length > 0,
@@ -31,6 +32,7 @@ export function run(wasm_args) {
     });
   } catch (error) {
     return JSON.stringify({
+      address,
       kyc_status: "denied",
       ofac_status: "denied",
       ofac_sanctioned: false,
