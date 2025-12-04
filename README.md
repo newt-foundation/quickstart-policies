@@ -1,1 +1,15 @@
 # quickstart-policies
+## build the wasm
+componentize-js --wit newton-provider.wit -o policy.wasm persona-kyc.js -d stdio random clocks http fetch-event
+
+## test the wasm
+newton-cli policy-data simulate --wasm-file policy.wasm --input-json "inq_xRZrQFKg7rqZ5UZGLhnvb2ympshE"
+
+## test the whole policy
+newton-cli policy simulate \
+  --wasm-file policy-files/policy.wasm \
+  --rego-file policy-files/policy.rego \
+  --intent-json policy-files/intent.json \
+  --entrypoint "max_gas_price.allow" \
+  --wasm-args policy-files/wasm_args.json \
+  --policy-params-data policy-files/policy_params_data.json

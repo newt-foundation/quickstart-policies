@@ -78,7 +78,7 @@ Then run:
 newton-cli policy-files generate-cids \
     --directory policy-files \
     --output policy-files/policy_cids.json \
-    --entrypoint "max_gas_price.allow"
+    --entrypoint "chainalysis_sanctions_agent.allow"
 ```
 
 ---
@@ -155,7 +155,7 @@ Then run:
 ```bash
 newton-cli policy deploy \
   --policy-cids policy-files/policy_cids.json \
-  --policy-data-address "0xcE08664ad42897C846d638F8642615B1145d5B6F"
+  --policy-data-address "0x9C516C2f6C123fd81D96B54f30Bf8a1CE0f5E92A"
 ```
 
 ### simulate
@@ -211,9 +211,9 @@ Then run:
 
 ```bash
 newton-cli policy-client set-policy-params \
-  --policy-client "0x058b50701c3Bb70B0F7cb4D583f005212679c903" \
+  --policy-client "0x575bA0eC954F50F69D5c3f7fbfB289B665e408c2" \
   --policy-params policy-files/policy_params_data.json \
-  --expire-after 1000
+  --expire-after 31536000
 ```
 
 ---
