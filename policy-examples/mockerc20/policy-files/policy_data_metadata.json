@@ -1,7 +1,0 @@
-{
-  "name": "Ptyh Oracle BTC Price Data",
-  "version": "1.0.0",
-  "author": "Newton",
-  "link": "https://newt.foundation",
-  "description": "This policy data gives real-time price data for BTC using Pyth Oracle."
-}
