@@ -1,4 +1,4 @@
-# Chainalysis Sanctions Policy
+# Newton Quickstart Policy
 # --------------------------------
 
 package newton_quickstart
@@ -28,11 +28,13 @@ deny if {
 }
 
 deny if {
+    check_kyc
     kyc_status != "approved"
     name_first == ""
     name_last == ""
 }
 
 deny if {
+    check_ofac
     is_sanctioned
 }
