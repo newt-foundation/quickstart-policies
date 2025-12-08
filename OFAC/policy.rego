@@ -1,7 +1,7 @@
-# Chainalysis Sanctions Policy
+# Newton Quickstart OFAC Policy
 # --------------------------------
 
-package chainalysis_sanctions_agent
+package quickstart_ofac
 
 # By default, deny requests.
 default allow := false
@@ -10,13 +10,11 @@ default allow := false
 to_address := input.to
 
 # From Policy Data
-api_call_status := data.data.status
 checked_address := data.data.address
 is_sanctioned := data.data.sanctioned
 
 # Allow the action if the `to` address is not sanctioned
 allow if {
-    api_call_status == 200
     lower(checked_address) == lower(to_address)
     not is_sanctioned
 }

@@ -1,16 +1,18 @@
-package persona_kyc
+# Newton Quickstart KYC Policy
+# --------------------------------
+
+package quickstart_kyc
 
 # Deny by default
 default allow := false
 
-# Wasm data
-inquiry := data.data
-status := inquiry.status
-name_first := inquiry.name_first
-name_last := inquiry.name_last
+# From Policy Data
+kyc_status := data.data.kyc_status
+name_first := data.data.name_first
+name_last := data.data.name_last
 
 allow if {
-    status == "approved"
+    kyc_status == "approved"
     name_first != ""
     name_last != ""
 }
