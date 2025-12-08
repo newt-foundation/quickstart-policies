@@ -1,17 +1,15 @@
 import { fetch as httpFetch } from 'newton:provider/http@0.1.0';
 
 function getKycResponse(inquiry_id) {
+  const url = `https://withpersona.com/api/v1/inquiries/${inquiry_id}`;
+
+  const authHeader = ["Authorization", "Bearer persona_sandbox_9cf7f104-1699-497e-9424-bf83f577a431"];
+  const contentTypeHeader = ["Content-Type", "application/json"];
+
   try {
-    const response = httpFetch({
-      url: `https://withpersona.com/api/v1/inquiries/${inquiry_id}`,
-      method: "GET",
-      headers: [
-        ["Content-Type", "application/json"],
-        ["Authorization", "Bearer persona_sandbox_9cf7f104-1699-497e-9424-bf83f577a431"]
-      ],
-      body: null
-    });
+    const response = httpFetch({ url, method: "GET", headers: [contentTypeHeader, authHeader] });
     const body = JSON.parse(new TextDecoder().decode(new Uint8Array(response.body)));
+
     return { 
       kyc_status: body.data.attributes.status,
       name_first: body.data.attributes['name-first'],
@@ -24,9 +22,11 @@ function getKycResponse(inquiry_id) {
 
 function getOfacResponse(address) {
   try {
-    const ofacUrl = `https://o66wu5mr47.execute-api.us-east-2.amazonaws.com/default/chainalysis/address/${address}`;
-    const response = httpFetch({ url: ofacUrl, method: "GET", headers: [], body: null });
+    const url = `https://o66wu5mr47.execute-api.us-east-2.amazonaws.com/default/chainalysis/address/${address}`;
+
+    const response = httpFetch({ url, method: "GET", headers: [] });
     const body = JSON.parse(new TextDecoder().decode(new Uint8Array(response.body)));
+
     return { identifications: body.identifications, sanctioned: body.identifications.length > 0 };
   } catch (error) {
     return { identifications: [], sanctioned: false };
