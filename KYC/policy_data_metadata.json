@@ -1,7 +1,7 @@
 {
-    "name": "Persona KYC Policy",
-    "version": "1.0.1000000",
+    "name": "Newton Quickstart Demo Policy Data",
+    "version": "0.0.100",
     "author": "Newton",
     "link": "https://newton.xyz",
-    "description": "This policy data provides information about a persona's KYC status."
+    "description": "This policy data provides information about a user's KYC status, OFAC sanctions screening and Fraud detection"
 }
