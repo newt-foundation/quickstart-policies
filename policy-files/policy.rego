@@ -1,22 +1,16 @@
-# Chainalysis Sanctions Policy
-# --------------------------------
+package persona_kyc
 
-package chainalysis_sanctions_agent
-
-# By default, deny requests.
+# Deny by default
 default allow := false
 
-# From Intent
-to_address := input.to
+# Wasm data
+inquiry := data.data
+status := inquiry.status
+name_first := inquiry.name_first
+name_last := inquiry.name_last
 
-# From Policy Data
-api_call_status := data.data.status
-checked_address := data.data.address
-is_sanctioned := data.data.sanctioned
-
-# Allow the action if the `to` address is not sanctioned
 allow if {
-    api_call_status == 200
-    lower(checked_address) == lower(to_address)
-    not is_sanctioned
+    status == "approved"
+    name_first != ""
+    name_last != ""
 }

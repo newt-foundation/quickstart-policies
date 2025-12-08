@@ -1,7 +1,7 @@
 {
-  "name": "Chainalysis Sanctions Policy",
-  "version": "1.0.1000008",
-  "author": "Newton",
-  "link": "https://newton.xyz",
-  "description": "This policy data provides information about sanctioned addresses based on Chainalyis Sanctions Screening."
+    "name": "Persona KYC Policy",
+    "version": "1.0.10000001",
+    "author": "Newton",
+    "link": "https://newton.xyz",
+    "description": "This policy data provides information about a persona's KYC status."
 }

@@ -1,10 +1,10 @@
 {
-  "wasmCid": "bafybeidnol4z2mwatmsqhotbiypp2ugmf4vfsndzw4dvpbctk5ahnjnayy",
+  "wasmCid": "bafybeig7zhnppq63uw4f66fgnsrayeg62wr6oay6cvjj7xqens7oqudyvi",
   "wasmArgs": "bafkreigkhuldxkyfkoaye4rgcqcwr45667vkygd45plwq6hawy7j4rbdky",
-  "policyCid": "bafkreihrgz7anumgorndidy4wmlh3xlmfy6kvhqtjkmaawqzcsyu7d4wqe",
-  "schemaCid": "bafkreigkg5yvtew6epzcib2one2sqxgnwjuea5desczfbug4dzs6nxcgde",
+  "policyCid": "bafkreie7iwuzol7wdycp2nvolggitkiibkfiizoesdpazdi7khall4amzm",
+  "schemaCid": "bafkreia3b33jjgtfx2ykpc3unfoyys3tyqtlsvhkswboyknrzdhobnwxpm",
   "attester": "0x4883282094755C01cd0d15dFE74753c9E189d194",
-  "entrypoint": "chainalysis_sanctions_agent.allow",
-  "policyMetadataCid": "bafkreiatpzm4gw6wjef4kc3yycqie7y5czgfv5n5xiofkyehqh4225rs7m",
-  "policyDataMetadataCid": "bafkreid6cr3deoo2usgewatuskrbwmeoeou6so6knah7cynaxnzasseoii"
+  "entrypoint": "persona_kyc.allow",
+  "policyMetadataCid": "bafkreie4yw3cboopznr5srlwpyqsat5jxxpi5gqanig5xx45ropqgvjjc4",
+  "policyDataMetadataCid": "bafkreibbfvytroswrju3kqd4za7sszipkbxrzri57havmygpnixzfswg34"
 }

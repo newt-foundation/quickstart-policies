@@ -78,7 +78,7 @@ Then run:
 newton-cli policy-files generate-cids \
     --directory policy-files \
     --output policy-files/policy_cids.json \
-    --entrypoint "chainalysis_sanctions_agent.allow"
+    --entrypoint "persona_kyc.allow"
 ```
 
 ---
@@ -155,7 +155,7 @@ Then run:
 ```bash
 newton-cli policy deploy \
   --policy-cids policy-files/policy_cids.json \
-  --policy-data-address "0x9C516C2f6C123fd81D96B54f30Bf8a1CE0f5E92A"
+  --policy-data-address "0xf123759714F79035b9faF50C72d7c383C6f70C26"
 ```
 
 ### simulate
@@ -211,7 +211,7 @@ Then run:
 
 ```bash
 newton-cli policy-client set-policy-params \
-  --policy-client "0x575bA0eC954F50F69D5c3f7fbfB289B665e408c2" \
+  --policy-client "0x27c31dEbA56bC41e2eE146c874c75a30B2E778c0" \
   --policy-params policy-files/policy_params_data.json \
   --expire-after 31536000
 ```
