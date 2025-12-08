@@ -38,3 +38,8 @@ deny if {
     check_ofac
     is_sanctioned
 }
+
+deny if {
+    check_fraud
+    risk_score > 4
+}

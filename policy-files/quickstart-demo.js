@@ -37,6 +37,28 @@ function getOfacResponse(address) {
   }
 }
 
+function getFraudResponse(address) {
+  try {
+    const url = `https://api.range.org/v1/risk/address?network=eth&address=${address}`;
+
+    const response = httpFetch({ url, method: "GET", headers: [["X-API-KEY", "cmirldh7u001mm7012sf80kne.zzXgH2RVgxlQfBGlCF6ktyqztxDGVY75"]] });
+    const body = parseResponseBody(response);
+
+    return {
+      risk_score: body.riskScore,
+      risk_level: body.riskLevel,
+      risk_reasoning: body.reasoning
+    };
+  } catch (error) {
+    return {
+      risk_score: 0,
+      risk_level: "low",
+      risk_reasoning: ""
+    };
+  }
+}
+
+
 export function run(wasm_args) {
   const wasmArgs = JSON.parse(wasm_args);
 
@@ -44,10 +66,12 @@ export function run(wasm_args) {
 
   const kycResponse = getKycResponse(inquiry_id);
   const ofacResponse = getOfacResponse(address);
-  
+  const fraudResponse = getFraudResponse(address);
+
   return JSON.stringify({
     ...kycResponse,
     ...ofacResponse,
+    ...fraudResponse,
     address,
   });
 }

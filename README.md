@@ -1,9 +1,9 @@
 # quickstart-policies
 ## build the wasm
-componentize-js --wit newton-provider.wit -o policy.wasm quickstart-demo.js -d stdio random clocks http fetch-event
+componentize-js --wit newton-provider.wit -o policy-files/policy.wasm policy-files/quickstart-demo.js -d stdio random clocks http fetch-event
 
 ## test the wasm
-newton-cli policy-data simulate --wasm-file policy.wasm --input-json '{"inquiry_id":"inq_xRZrQFKg7rqZ5UZGLhnvb2ympshE", "address":"0x1999ef52700c34de7ec2b68a28aafb37db0c5ade"}'
+newton-cli policy-data simulate --wasm-file policy-files/policy.wasm --input-json '{"inquiry_id":"inq_xRZrQFKg7rqZ5UZGLhnvb2ympshE", "address":"0xF2168be2F3aE8989696705b211c7b9d65E3416dA"}'
 
 ## test the whole policy
 newton-cli policy simulate \
