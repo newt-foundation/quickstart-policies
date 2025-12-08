@@ -1,0 +1,7 @@
+{
+  "name": "Newton Quickstart OFAC & KYC Policy",
+  "version": "0.0.100",
+  "author": "Newton",
+  "link": "https://newton.xyz",
+  "description": "This policy restricts transactions to sanctioned addresses based on Chainalyis Sanctions Screening and persona's with a KYC status of 'approved'."
+}
