@@ -1,5 +1,9 @@
 import { fetch as httpFetch } from 'newton:provider/http@0.1.0';
 
+function parseResponseBody(response) {
+  return JSON.parse(new TextDecoder().decode(new Uint8Array(response.body)));
+}
+
 function getKycResponse(inquiry_id) {
   const url = `https://withpersona.com/api/v1/inquiries/${inquiry_id}`;
 
@@ -8,7 +12,7 @@ function getKycResponse(inquiry_id) {
 
   try {
     const response = httpFetch({ url, method: "GET", headers: [contentTypeHeader, authHeader] });
-    const body = JSON.parse(new TextDecoder().decode(new Uint8Array(response.body)));
+    const body = parseResponseBody(response);
 
     return { 
       kyc_status: body.data.attributes.status,
@@ -25,7 +29,7 @@ function getOfacResponse(address) {
     const url = `https://o66wu5mr47.execute-api.us-east-2.amazonaws.com/default/chainalysis/address/${address}`;
 
     const response = httpFetch({ url, method: "GET", headers: [] });
-    const body = JSON.parse(new TextDecoder().decode(new Uint8Array(response.body)));
+    const body = parseResponseBody(response);
 
     return { identifications: body.identifications, sanctioned: body.identifications.length > 0 };
   } catch (error) {
