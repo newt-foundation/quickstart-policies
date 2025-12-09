@@ -3,7 +3,7 @@
 
 package newton_quickstart
 
-# By default, deny requests.
+# Allow request if no checks fail
 default allow := true
 
 # From Intent
@@ -22,6 +22,9 @@ name_last := data.data.name_last
 # OFAC
 checked_address := data.data.address
 is_sanctioned := data.data.sanctioned
+
+# Fraud
+risk_score := data.data.risk_score
 
 deny if {
     lower(checked_address) != lower(to_address)
