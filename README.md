@@ -23,4 +23,4 @@ newton-cli policy-data deploy --policy-cids policy-files/policy_cids.json
 ## deploy policy
 newton-cli policy deploy \
   --policy-cids policy-files/policy_cids.json \
-  --policy-data-address "0x0cBC22B2840Ef6BA6CA0c8Af8DE1B9feF8a16269"
+  --policy-data-address "0xB517C755194BbB05D3df8BD7B1dbb14793BCf785"

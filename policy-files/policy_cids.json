@@ -1,7 +1,7 @@
 {
   "wasmCid": "bafybeiclmwzefyjmnznupnzlaer6qxvmrooo2k3wqkoowmwwzso5pqhqui",
-  "wasmArgs": "bafkreigkhuldxkyfkoaye4rgcqcwr45667vkygd45plwq6hawy7j4rbdky",
-  "policyCid": "bafkreiciq6cp2ufu3nbphghlvndah3b3uulihusvgqnryfy4cx2ugfocoi",
+  "wasmArgs": "bafkreiabucxtwbou7vdaexzx7vushcse2w7hkuceriahczpsc2hbiwykda",
+  "policyCid": "bafkreibrspa5y7s6whiv5vpt4xr6773l5svhf7flrglt5txamnn4te6thm",
   "schemaCid": "bafkreierdrbh6byjpb26zt3dz5yqy44dp2vxcthvsqwl2ak63q5jdgx5fy",
   "attester": "0x4883282094755C01cd0d15dFE74753c9E189d194",
   "entrypoint": "newton_quickstart.allow",
