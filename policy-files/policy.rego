@@ -3,8 +3,11 @@
 
 package newton_quickstart
 
-# Allow request if no checks fail
+# Allow request only if no checks fail
 default allow := true
+allow := false if {
+    deny
+}
 
 # From Intent
 to_address := input.to

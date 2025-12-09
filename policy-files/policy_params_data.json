@@ -1,1 +1,5 @@
-{}
+{
+    "check_ofac": false,
+    "check_kyc": true,
+    "check_fraud": true
+}

@@ -10,12 +10,12 @@ newton-cli policy simulate \
   --wasm-file policy-files/policy.wasm \
   --rego-file policy-files/policy.rego \
   --intent-json policy-files/intent.json \
-  --entrypoint "quickstart_ofac.allow" \
+  --entrypoint "newton_quickstart.allow" \
   --wasm-args policy-files/wasm_args.json \
   --policy-params-data policy-files/policy_params_data.json
 
 ## generate CIDs
-newton-cli policy-files generate-cids --directory policy-files --output policy-files/policy_cids.json --entrypoint "quickstart_ofac.allow"
+newton-cli policy-files generate-cids --directory policy-files --output policy-files/policy_cids.json --entrypoint "newton_quickstart.allow"
 
 ## deploy policy data
 newton-cli policy-data deploy --policy-cids policy-files/policy_cids.json
@@ -23,4 +23,4 @@ newton-cli policy-data deploy --policy-cids policy-files/policy_cids.json
 ## deploy policy
 newton-cli policy deploy \
   --policy-cids policy-files/policy_cids.json \
-  --policy-data-address "0x237043a818870849793cfBA3828AA152B35545e3"
+  --policy-data-address "0x0cBC22B2840Ef6BA6CA0c8Af8DE1B9feF8a16269"
