@@ -1,0 +1,9 @@
+{
+  "wasmCid": "bafybeia5ns4opqkgdzg6o2tzkfczyy24gqhhmzyqovigvam5hgop64j76e",
+  "policyCid": "bafkreibio4rv52fnvif2gtvpwpwkrtlzsyvurkwpjqvjmivsar55yfvzbm",
+  "schemaCid": "bafkreigkg5yvtew6epzcib2one2sqxgnwjuea5desczfbug4dzs6nxcgde",
+  "attester": "0x4883282094755C01cd0d15dFE74753c9E189d194",
+  "entrypoint": "demo_ofac.allow",
+  "policyMetadataCid": "bafkreigezbu5wucfdmoczfybzzgwa27lz6thhlvoknihfcbimvs3xbhx2y",
+  "policyDataMetadataCid": "bafkreiat2ekjz5qngmghkv7yhxbnc3uscxlnqrmlhjehaz6kyd7xiwnyim"
+}
