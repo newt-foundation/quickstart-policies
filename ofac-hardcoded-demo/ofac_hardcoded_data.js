@@ -1,27 +1,3 @@
-const INQUIRY_ID_MAPPING = {
-  "inq_xRZrQFKg7rqZ5UZGLhnvb2ympshE": {
-    kyc_status: "approved",
-    name_first: "John",
-    name_last: "Doe"
-  },
-  "inq_xYZrQFKg8rqZ5UZJLhnvb1ympshF": {
-    kyc_status: "approved",
-    name_first: "Jane",
-    name_last: "Smith"
-  },
-  "inq_xDZrQFKg9rqZ5UZHLhnvb0ympshEG": {
-    kyc_status: "approved",
-    name_first: "Hubert",
-    name_last: "Jaroš"
-  },
-  "inq_kDJfLUKg4rqN5UDsqRnvb9ynpsKdZ": {
-    kyc_status: "approved",
-    name_first: "Dongmin",
-    name_last: "Lee"
-  },
-}
-
-
 const SANCTIONED_ADDRESS_MAPPING = {
   "0x08723392Ed15743cc38513C4925f5e6be5c17243": {
     sanctioned: true,
@@ -122,33 +98,6 @@ const SANCTIONED_ADDRESS_MAPPING = {
   }
 }
 
-const FRAUD_ADDRESS_MAPPING = {
-  "0x968b6984cba14444f23ee51be90652408155e142": {
-    risk_score: 10,
-    risk_level: "CRITICAL RISK (Directly malicious)",
-    risk_reasoning: "Address is directly flagged for malicious activity."
-  },
-  "0x1999ef52700c34de7ec2b68a28aafb37db0c5ade": {
-    risk_score: 10,
-    risk_level: "CRITICAL RISK (Directly malicious)",
-    risk_reasoning: "Address is directly flagged for malicious activity."
-  },
-  "0xf4d520149541f948f6da99eaec6ef6d699690ba3": {
-    risk_score: 10,
-    risk_level: "CRITICAL RISK (Directly malicious)",
-    risk_reasoning: "Address is directly flagged for malicious activity."
-  }
-}
-
-function getKycResponse(inquiry_id) {
-  const kycResponse = INQUIRY_ID_MAPPING[inquiry_id];
-  if (kycResponse) {
-    return kycResponse;
-  } else {
-    return { kyc_status: "denied", name_first: "", name_last: "" };
-  }
-}
-
 function getOfacResponse(address) {
   const ofacResponse = SANCTIONED_ADDRESS_MAPPING[address];
   if (ofacResponse) {
@@ -158,32 +107,15 @@ function getOfacResponse(address) {
   }
 }
 
-function getFraudResponse(address) {
-  const fraudResponse = FRAUD_ADDRESS_MAPPING[address];
-  if (fraudResponse) {
-    return fraudResponse;
-  }
-  return {
-    risk_score: 0,
-    risk_level: "Very low risk",
-    risk_reasoning: "No suspicious paths found within 5 hops."
-  }
-}
-
-
 export function run(wasm_args) {
   const wasmArgs = JSON.parse(wasm_args);
 
-  const { inquiry_id, address } = wasmArgs;
+  const { address } = wasmArgs;
 
-  const kycResponse = getKycResponse(inquiry_id);
   const ofacResponse = getOfacResponse(address);
-  const fraudResponse = getFraudResponse(address);
 
   return JSON.stringify({
-    ...kycResponse,
     ...ofacResponse,
-    ...fraudResponse,
     address,
   });
 }
