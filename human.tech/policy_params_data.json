@@ -1,0 +1,7 @@
+{
+    "check_stamps_score": true,
+    "check_models_score": true,
+    "check_poch": true,
+    "models_score_threshold": 90,
+    "poch_score_threshold": 4
+}

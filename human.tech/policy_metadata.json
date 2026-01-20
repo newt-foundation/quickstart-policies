@@ -1,0 +1,7 @@
+{
+    "name": "Human.tech demo policy",
+    "version": "0.0.100",
+    "author": "Human.tech",
+    "link": "https://human.tech",
+    "description": "This policy restricts transactions based on stamps score, models score and proof of clean hands"
+}
