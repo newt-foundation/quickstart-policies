@@ -14,24 +14,18 @@ to_address := input.to
 
 # Policy Params
 check_stamps_score = data.params.chech_stamps_score
-
-# Models score Params
 check_models_score = data.params.check_models_score
-models_score_threshold = data.params.model_score_threshold
-
-# Proof of clean hands params
 check_poch = data.params.check_poch
+
+models_score_threshold = data.params.model_score_threshold
 poch_score_threshold = data.params.poch_score_threshold
 
-# Stamps score
+# Policy Data
 is_stamps_score_passing := data.data.stamps_score.passing_score
-
-# Models score
 models_score := data.data.models_score.details.models.aggregate.score
-
-# Proof of clean hands
 poch_score := data.data.proof_of_clean_hands.total
 
+# Conditions
 deny if {
     lower(checked_address) != lower(to_address)
 }
