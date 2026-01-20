@@ -103,7 +103,7 @@ const SANCTIONED_ADDRESS_MAPPING = {
       }
     ]
   },
-  "0x19aa5fe80d33a56d56c78e82ea5e50e5d80b4dff": {
+  "0x1da5821544e25c636c1417ba96ade4cf6d2f9b5a": {
     sanctioned: true,
     identifications: [
       {
