@@ -18,12 +18,12 @@ check_models_score = data.params.check_models_score
 check_poch = data.params.check_poch
 
 models_score_threshold = data.params.model_score_threshold
-poch_score_threshold = data.params.poch_score_threshold
+poch_total_threshold = data.params.poch_total_threshold
 
 # Policy Data
 is_stamps_score_passing := data.data.stamps_score.passing_score
 models_score := data.data.models_score.details.models.aggregate.score
-poch_score := data.data.proof_of_clean_hands.total
+poch_total := data.data.proof_of_clean_hands.total
 
 # Conditions
 deny if {
