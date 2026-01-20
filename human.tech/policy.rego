@@ -21,6 +21,7 @@ models_score_threshold = data.params.model_score_threshold
 poch_total_threshold = data.params.poch_total_threshold
 
 # Policy Data
+checked_address := data.data.stamps_score.address
 is_stamps_score_passing := data.data.stamps_score.passing_score
 models_score := data.data.models_score.details.models.aggregate.score
 poch_total := data.data.proof_of_clean_hands.total
@@ -32,7 +33,7 @@ deny if {
 
 deny if {
     check_stamps_score
-    !is_stamps_score_passing
+    not is_stamps_score_passing
 }
 
 deny if {
@@ -42,5 +43,5 @@ deny if {
 
 deny if {
     check_poch
-    poch_score < poch_score_threshold
+    poch_total < poch_total_threshold
 }
