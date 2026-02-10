@@ -9,8 +9,8 @@ allow := false if {
     deny
 }
 
-# From Intent
-to_address := input.to
+# To address is the first argument
+to_address := lower(input.decoded_function_arguments[0])
 
 # Policy Params
 check_ofac = data.params.check_ofac

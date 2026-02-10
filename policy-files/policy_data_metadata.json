@@ -1,6 +1,6 @@
 {
   "name": "Newton Quickstart Demo Policy Data",
-  "version": "0.0.100",
+  "version": "0.0.100000112",
   "author": "Newton",
   "link": "https://newton.xyz",
   "description": "This policy data provides information about a user's KYC status, OFAC sanctions screening and Fraud detection"

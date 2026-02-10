@@ -1,10 +1,9 @@
 {
-  "wasmCid": "bafybeiclmwzefyjmnznupnzlaer6qxvmrooo2k3wqkoowmwwzso5pqhqui",
-  "wasmArgs": "bafkreiabucxtwbou7vdaexzx7vushcse2w7hkuceriahczpsc2hbiwykda",
+  "wasmCid": "bafybeifggtpvygjqwhp7hslt546rrc5fpdipe7q357cnx7uzqff7fli25y",
   "policyCid": "bafkreibrspa5y7s6whiv5vpt4xr6773l5svhf7flrglt5txamnn4te6thm",
   "schemaCid": "bafkreierdrbh6byjpb26zt3dz5yqy44dp2vxcthvsqwl2ak63q5jdgx5fy",
   "attester": "0x4883282094755C01cd0d15dFE74753c9E189d194",
   "entrypoint": "newton_quickstart.allow",
-  "policyMetadataCid": "bafkreiaz5nbaqv4ldkxvvxz6cgxpqrsypyxyas5dfas42kuaxss7tinlmi",
-  "policyDataMetadataCid": "bafkreiajs2yg6ykdlymhksecwgfqmem5zrvdwgqy2immu3pkuusffu2h6e"
+  "policyMetadataCid": "bafkreicyee4jofjcz64tzmwv6pvkesabm55jwvppsp54ffi3u22xndn5be",
+  "policyDataMetadataCid": "bafkreifdvupj3uhmoahsakv5gbf3nyygcedt266d3sanqxt76wj5hnwyxe"
 }

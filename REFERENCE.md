@@ -59,7 +59,7 @@ newton-cli --chain-id 11155111 policy-files generate-cids \
     --output policy-files/policy_cids.json \
     --pinata-jwt "your pinata jwt" \
     --pinata-gateway "your pinata gatway" \
-    --entrypoint "max_gas_price.allow"
+    --entrypoint "newton_quickstart.allow"
 ```
 
 **Using environment variables:**
@@ -78,7 +78,7 @@ Then run:
 newton-cli policy-files generate-cids \
     --directory policy-files \
     --output policy-files/policy_cids.json \
-    --entrypoint "persona_kyc.allow"
+    --entrypoint "newton_quickstart.allow"
 ```
 
 ---
@@ -155,7 +155,7 @@ Then run:
 ```bash
 newton-cli policy deploy \
   --policy-cids policy-files/policy_cids.json \
-  --policy-data-address "0xf123759714F79035b9faF50C72d7c383C6f70C26"
+  --policy-data-address "0xA13599a8b1831ed5Bfd84290832D4175056DcAda"
 ```
 
 ### simulate
