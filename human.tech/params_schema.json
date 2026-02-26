@@ -1,0 +1,28 @@
+{
+    "type": "object",
+    "description": "policy structure: check_stamps_score boolean, check_models_score boolean, check_poch boolean, models_score_threshold number, poch_score_threshold number",
+    "required": ["check_stamps_score", "check_models_score", "check_poch", "models_score_threshold", "poch_score_threshold"],
+    "properties": {
+      "check_stamps_score": {
+        "type": "boolean",
+        "description": "Whether to check stamps score."
+      },
+      "check_models_score": {
+        "type": "boolean",
+        "description": "Whether to check models score."
+      },
+      "check_poch": {
+        "type": "boolean",
+        "description": "Whether to check proof of clean hands."
+      },
+      "models_score_threshold": {
+        "type": "number",
+        "description": "Models score threshold."
+      },
+      "poch_score_threshold": {
+        "type": "number",
+        "description": "Proof of clean hands score threshold."
+      }
+    }
+  }
+  

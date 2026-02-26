@@ -1,0 +1,7 @@
+{
+  "name": "Newton Quickstart Demo Policy",
+  "version": "0.0.100000112",
+  "author": "Newton",
+  "link": "https://newton.xyz",
+  "description": "This policy restricts transactions based on OFAC sanctions, KYC status and Fraud detection"
+}

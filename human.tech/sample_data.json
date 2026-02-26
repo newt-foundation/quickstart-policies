@@ -1,0 +1,19 @@
+{
+    "stamps_score": {
+      "address": "0x39e7c1330e83a429f7cf2a367a4c6e6ec6e86f1e",
+      "score": "0.00000",
+      "passing_score": false,
+      "last_score_timestamp": "2026-01-16T07:05:54.994673+00:00",
+      "expiration_timestamp": null,
+      "threshold": "20.00000",
+      "error": null,
+      "stamps": {},
+      "points_data": null,
+      "possible_points_data": null
+    },
+    "models_score": {
+      "address": "0x39E7c1330E83a429f7cF2a367A4c6E6eC6E86f1E",
+      "details": { "models": { "aggregate": { "score": 91 } } }
+    },
+    "proof_of_clean_hands": { "total": 0, "rows": [], "page": 1, "size": 10 }
+}

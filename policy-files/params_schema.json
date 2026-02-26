@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "description": "policy structure: check_ofac boolean, check_kyc boolean, check_fraud boolean",
+  "required": ["check_ofac", "check_kyc", "check_fraud"],
+  "properties": {
+    "check_ofac": {
+      "type": "boolean",
+      "description": "Whether to check OFAC sanctions."
+    },
+    "check_kyc": {
+      "type": "boolean",
+      "description": "Whether to check KYC status."
+    },
+    "check_fraud": {
+      "type": "boolean",
+      "description": "Whether to check fraud."
+    } 
+  }
+}

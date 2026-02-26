@@ -1,0 +1,7 @@
+{
+  "name": "Test OFAC Policy Data",
+  "version": "0.0.1",
+  "author": "Newton",
+  "link": "https://newton.xyz",
+  "description": "This is a test OFAC policy data. Only hardcoded OFAC data is stored."
+}
