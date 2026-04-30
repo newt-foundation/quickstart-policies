@@ -1,9 +1,11 @@
 {
-  "wasmCid": "bafybeia5ns4opqkgdzg6o2tzkfczyy24gqhhmzyqovigvam5hgop64j76e",
-  "policyCid": "bafkreibio4rv52fnvif2gtvpwpwkrtlzsyvurkwpjqvjmivsar55yfvzbm",
-  "schemaCid": "bafkreigkg5yvtew6epzcib2one2sqxgnwjuea5desczfbug4dzs6nxcgde",
-  "attester": "0x4883282094755C01cd0d15dFE74753c9E189d194",
+  "attester": "0xD45062003a4626a532F30A4596aB253c45AE0647",
   "entrypoint": "demo_ofac.allow",
+  "policyCid": "bafkreibio4rv52fnvif2gtvpwpwkrtlzsyvurkwpjqvjmivsar55yfvzbm",
+  "policyCodeHash": "0xb017e60b77bffd830bbf705acf9255bf1b644609017b65bed335134a353d0724",
+  "policyDataMetadataCid": "bafkreiat2ekjz5qngmghkv7yhxbnc3uscxlnqrmlhjehaz6kyd7xiwnyim",
   "policyMetadataCid": "bafkreigezbu5wucfdmoczfybzzgwa27lz6thhlvoknihfcbimvs3xbhx2y",
-  "policyDataMetadataCid": "bafkreiat2ekjz5qngmghkv7yhxbnc3uscxlnqrmlhjehaz6kyd7xiwnyim"
+  "schemaCid": "bafkreigkg5yvtew6epzcib2one2sqxgnwjuea5desczfbug4dzs6nxcgde",
+  "secretsSchemaCid": "bafkreicpgvnkvplbxkvrimbytd3s2zns35dcj76xyoz3fdpnn3bt2j3ixy",
+  "wasmCid": "bafybeia5ns4opqkgdzg6o2tzkfczyy24gqhhmzyqovigvam5hgop64j76e"
 }
