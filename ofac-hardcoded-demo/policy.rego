@@ -7,8 +7,8 @@ package demo_ofac
 default allow := false
 
 to_address := input.to
-checked_address := data.data.address
-is_sanctioned := data.data.sanctioned
+checked_address := data.wasm.address
+is_sanctioned := data.wasm.sanctioned
 
 allow if {
     lower(checked_address) == lower(to_address)

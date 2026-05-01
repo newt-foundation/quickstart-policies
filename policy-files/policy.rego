@@ -18,16 +18,16 @@ check_kyc = data.params.check_kyc
 check_fraud = data.params.check_fraud
 
 # KYC
-kyc_status := data.data.kyc_status
-name_first := data.data.name_first
-name_last := data.data.name_last
+kyc_status := data.wasm.kyc_status
+name_first := data.wasm.name_first
+name_last := data.wasm.name_last
 
 # OFAC
-checked_address := data.data.address
-is_sanctioned := data.data.sanctioned
+checked_address := data.wasm.address
+is_sanctioned := data.wasm.sanctioned
 
 # Fraud
-risk_score := data.data.risk_score
+risk_score := data.wasm.risk_score
 
 deny if {
     lower(checked_address) != lower(to_address)

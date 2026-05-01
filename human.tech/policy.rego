@@ -21,10 +21,10 @@ models_score_threshold = data.params.model_score_threshold
 poch_total_threshold = data.params.poch_total_threshold
 
 # Policy Data
-checked_address := data.data.stamps_score.address
-is_stamps_score_passing := data.data.stamps_score.passing_score
-models_score := data.data.models_score.details.models.aggregate.score
-poch_total := data.data.proof_of_clean_hands.total
+checked_address := data.wasm.stamps_score.address
+is_stamps_score_passing := data.wasm.stamps_score.passing_score
+models_score := data.wasm.models_score.details.models.aggregate.score
+poch_total := data.wasm.proof_of_clean_hands.total
 
 # Conditions
 deny if {
